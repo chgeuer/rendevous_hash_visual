@@ -79,13 +79,53 @@ The right panel shows an SVG visualization depicting:
 - **`SvgAnimator`**: Animation engine for multi-frame SVG sequences
 - **`RendevousHashTopology`**: Core hashing and topology logic (external dependency)
 
-### Dependencies
+The `InteractiveState` has these properties:
 
-- **Phoenix LiveView**: Real-time web interface
-- **ReactiveStruct**: Reactive state management with computed fields
-- **RendevousHashTopology**: Core rendevous hashing implementation
-- **TailwindCSS**: Styling and responsive design
-- **Heroicons**: UI iconography
+```mermaid
+flowchart TD
+    %% Input fields
+    ANIMATED[animated]
+    MAXVMCOUNT[max_vm_count]
+    REGIONSINPUT[regions_input]
+    REPLICATIONFACTORINPUT[replication_factor_input]
+    RESPECTTOPOLOGYCONSTRAINTS[respect_topology_constraints]
+    TEXTINPUT[text_input]
+    VMCOUNTINPUT[vm_count_input]
+    ZONESINPUT[zones_input]
+    %% Computed fields
+    BUCKETHASHES[bucket_hashes]
+    MAXSCALE[max_scale]
+    NODES[nodes]
+    REGIONS[regions]
+    REPLICATIONFACTOR[replication_factor]
+    SVGCONTENT[svg_content]
+    VMCOUNT[vm_count]
+    VMS[vms]
+    ZONES[zones]
+    %% Dependencies
+    ANIMATED --> SVGCONTENT
+    BUCKETHASHES --> NODES
+    MAXSCALE --> REPLICATIONFACTOR
+    MAXVMCOUNT --> VMCOUNT
+    NODES --> MAXSCALE
+    NODES --> SVGCONTENT
+    REGIONS --> BUCKETHASHES
+    REGIONSINPUT --> REGIONS
+    REPLICATIONFACTOR --> SVGCONTENT
+    REPLICATIONFACTORINPUT --> REPLICATIONFACTOR
+    RESPECTTOPOLOGYCONSTRAINTS --> NODES
+    TEXTINPUT --> NODES
+    VMCOUNT --> VMS
+    VMCOUNTINPUT --> VMCOUNT
+    VMS --> BUCKETHASHES
+    ZONES --> BUCKETHASHES
+    ZONESINPUT --> ZONES
+    %% Styling
+    classDef inputField fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef computedField fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    class TEXTINPUT,REGIONSINPUT,ZONESINPUT,VMCOUNTINPUT,MAXVMCOUNT,REPLICATIONFACTORINPUT,RESPECTTOPOLOGYCONSTRAINTS,ANIMATED inputField
+    class NODES,REGIONS,ZONES,VMCOUNT,VMS,REPLICATIONFACTOR,BUCKETHASHES,MAXSCALE,SVGCONTENT computedField
+```
 
 ## Development
 
@@ -109,46 +149,6 @@ mix credo        # Static analysis
 mix compile --warnings-as-errors
 ```
 
-### Asset Development
-
-```bash
-# Watch for asset changes during development
-mix phx.server
-
-# Build assets for production
-mix assets.deploy
-```
-
-## Deployment
-
-For production deployment, see the [Phoenix deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-### Production Build
-
-```bash
-# Set production environment
-export MIX_ENV=prod
-
-# Install dependencies and compile
-mix deps.get --only prod
-mix compile
-
-# Build assets
-mix assets.deploy
-
-# Generate release
-mix release
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Run the test suite and quality checks (`mix precommit`)
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
 
 ## Learn More
 
