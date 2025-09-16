@@ -100,17 +100,17 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
           Interactive Visualizer for Rendevous Hashing
         </h1>
       </div>
-
+      
     <!-- Main Content Grid -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-
+        
     <!-- Left Panel - Controls -->
         <div class="lg:col-span-1 space-y-6">
-
+          
     <!-- Input Controls Card -->
           <div class="bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-lg font-semibold mb-4 text-gray-800">Configuration</h2>
-
+            
     <!-- Text Input Section -->
             <div class="mb-6">
               <label for="text_input" class="block text-sm font-medium text-gray-700 mb-2">
@@ -128,7 +128,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 />
               </form>
             </div>
-
+            
     <!-- Regions Input Section -->
             <div class="mb-6">
               <label for="regions_input" class="block text-sm font-medium text-gray-700 mb-2">
@@ -146,7 +146,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 />
               </form>
             </div>
-
+            
     <!-- Zone Input Section -->
             <div class="mb-6">
               <label for="zones_input" class="block text-sm font-medium text-gray-700 mb-2">
@@ -164,7 +164,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 />
               </form>
             </div>
-
+            
     <!-- Topology Constraints Checkbox -->
             <div class="mb-6">
               <form phx-change="topology_constraints_changed">
@@ -189,7 +189,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 When enabled, node selection considers geographic distribution for optimal fault tolerance
               </p>
             </div>
-
+            
     <!-- Topology Constraints Checkbox -->
             <div class="mb-6">
               <form phx-change="animated_changed">
@@ -214,7 +214,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 When enabled, the SVG image is animated to show the selection process
               </p>
             </div>
-
+            
     <!-- VM Count Slider -->
             <div class="mb-6">
               <div class="flex items-center justify-between mb-2">
@@ -253,7 +253,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
                 </form>
               </div>
             </div>
-
+            
     <!-- Replication Factor Slider -->
             <div class="mb-6">
               <div class="flex items-center justify-between mb-2">
@@ -293,7 +293,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
               </div>
             </div>
           </div>
-
+          
     <!-- Stats Card -->
           <div class="bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-lg font-semibold mb-4 text-gray-800">Current State</h2>
@@ -329,7 +329,7 @@ defmodule RendevousHashVisualWeb.InteractiveSvgLive do
             </div>
           </div>
         </div>
-
+        
     <!-- Right Panel - Visualization -->
         <div class="lg:col-span-2">
           <div class="bg-white rounded-lg shadow-lg p-6 h-full">

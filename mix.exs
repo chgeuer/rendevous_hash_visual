@@ -71,7 +71,7 @@ defmodule RendevousHashVisual.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
-      {:reactive_struct, github: "chgeuer/reactive_struct", ref: "b356652"},
+      {:reactive_struct, github: "chgeuer/reactive_struct", branch: "main"},
       # {:reactive_struct, path: "../reactive_struct"},
       {:rendevous_hash_topology, github: "chgeuer/rendevous_hash_topology", branch: "main"}
     ]

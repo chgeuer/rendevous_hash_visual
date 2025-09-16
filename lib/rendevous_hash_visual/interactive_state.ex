@@ -55,7 +55,7 @@ defmodule RendevousHashVisual.InteractiveState do
 
   ### Field Types:
   - **Input fields** (blue): Direct user inputs or configuration
-  - **Computed fields** (purple): Derived from other fields using `computed/3`
+  - **Computed fields** (purple): Derived from other fields using `computed/2`
   - **Final output** (green): The SVG content rendered to the user
 
   ## Automatic Mermaid Diagram Generation
@@ -85,56 +85,62 @@ defmodule RendevousHashVisual.InteractiveState do
     animated svg_content
     )a
 
-  computed(:regions, deps: [:regions_input], do: regions_input |> split_csv())
-  computed(:zones, deps: [:zones_input], do: zones_input |> split_csv())
+  computed(:regions, fn %{regions_input: ri} -> ri |> split_csv() end)
 
-  computed(:vm_count,
-    deps: [:vm_count_input, :max_vm_count],
-    do: parse_vm_count(vm_count_input, max_vm_count)
-  )
+  computed(:zones, fn %{zones_input: zi} -> zi |> split_csv() end)
 
-  computed(:vms, deps: [:vm_count], do: Range.new(1, vm_count))
+  computed(:vm_count, fn %{vm_count_input: count, max_vm_count: max} ->
+    parse_vm_count(count, max)
+  end)
 
-  computed(:bucket_hashes,
-    deps: [:regions, :zones, :vms],
-    do:
-      for region <- regions,
-          zone <- zones,
-          vm <- vms do
-        ComputeNode.new(region, zone, vm)
-      end
-      |> RendevousHash.pre_compute_list()
-  )
+  computed(:vms, fn %{vm_count: c} -> Range.new(1, c) end)
 
-  computed(:nodes,
-    deps: [:bucket_hashes, :text_input, :respect_topology_constraints],
-    do:
-      if respect_topology_constraints do
-        bucket_hashes
-        |> RendevousHash.list(text_input)
-        |> RendevousHashTopology.sort_by_optimum_storage_resiliency()
-      else
-        bucket_hashes
-        |> RendevousHash.list(text_input)
-      end
-  )
+  computed(:bucket_hashes, fn %{regions: regions, zones: zones, vms: vms} ->
+    for region <- regions,
+        zone <- zones,
+        vm <- vms do
+      ComputeNode.new(region, zone, vm)
+    end
+    |> RendevousHash.pre_compute_list()
+  end)
 
-  computed(:max_scale, deps: [:nodes], do: max(1, length(nodes) - 1))
+  computed(:nodes, fn %{
+                        bucket_hashes: bucket_hashes,
+                        text_input: text_input,
+                        respect_topology_constraints: respect_topology_constraints
+                      } ->
+    if respect_topology_constraints do
+      bucket_hashes
+      |> RendevousHash.list(text_input)
+      |> RendevousHashTopology.sort_by_optimum_storage_resiliency()
+    else
+      bucket_hashes
+      |> RendevousHash.list(text_input)
+    end
+  end)
 
-  computed(:replication_factor,
-    deps: [:replication_factor_input, :max_scale],
-    do: parse_replication_factor(replication_factor_input, max_scale)
-  )
+  computed(:max_scale, fn %{nodes: nodes} ->
+    max(1, length(nodes) - 1)
+  end)
 
-  computed(:svg_content,
-    deps: [:nodes, :replication_factor, :animated],
-    do:
-      if replication_factor > 1 and animated do
-        generate_animated_svg(nodes, replication_factor)
-      else
-        generate_svg(nodes, replication_factor)
-      end
-  )
+  computed(:replication_factor, fn %{
+                                     replication_factor_input: replication_factor_input,
+                                     max_scale: max_scale
+                                   } ->
+    parse_replication_factor(replication_factor_input, max_scale)
+  end)
+
+  computed(:svg_content, fn %{
+                              nodes: nodes,
+                              replication_factor: replication_factor,
+                              animated: animated
+                            } ->
+    if replication_factor > 1 and animated do
+      generate_animated_svg(nodes, replication_factor)
+    else
+      generate_svg(nodes, replication_factor)
+    end
+  end)
 
   # Private functions
   # Helper function to split CSV input and trim whitespace
