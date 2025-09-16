@@ -75,11 +75,11 @@ The right panel shows an SVG visualization depicting:
 ### Core Components
 
 - **`InteractiveSvgLive`**: Phoenix LiveView component handling user interactions
-- **`InteractiveState`**: Reactive state management with automatic field dependencies
+- **`InteractiveState`**: Reactive state management with automatic field dependencies (using [`reactive_struct`](https://github.com/chgeuer/reactive_struct/))
 - **`SvgAnimator`**: Animation engine for multi-frame SVG sequences
-- **`RendevousHashTopology`**: Core hashing and topology logic (external dependency)
+- [**`RendevousHashTopology`**](https://github.com/chgeuer/rendevous_hash_topology/): Core hashing and topology logic (external dependency)
 
-The [`InteractiveSvgLive`](lib/rendevous_hash_visual_web/live/interactive_svg_live.ex) LiveView is comparably simple, because all changes happen just by sending state into `InteractiveState`, which has these properties:
+The [`InteractiveSvgLive`](lib/rendevous_hash_visual_web/live/interactive_svg_live.ex) LiveView is comparably simple, because all changes happen just by sending state into [`InteractiveState`](lib/rendevous_hash_visual/interactive_state.ex), which has these properties:
 
 ```mermaid
 flowchart TD
