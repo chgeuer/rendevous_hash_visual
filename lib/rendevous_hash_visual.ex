@@ -1,0 +1,2 @@
+defmodule RendevousHashVisual do
+end
