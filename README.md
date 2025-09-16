@@ -155,3 +155,4 @@ mix compile --warnings-as-errors
 - [Wikipedia: Rendezvous Hashing](https://en.wikipedia.org/wiki/Rendezvous_hashing)
 - [Original Paper: A Name-Based Mapping Scheme for Rendezvous](https://www.eecs.umich.edu/techreports/cse/96/CSE-TR-316-96.pdf)
 - [Rendezvous Hashing: The Path to Faster Hashes Calculation](https://www.npiontko.pro/2024/12/23/computation-efficient-rendezvous-hashing) - An optimization I'm using to speed up the hash process.
+- [Relevan Transcript](https://gist.github.com/chgeuer/a5b83e5840966452e38e828fbd22a9f0#how-do-we-know-what-goes-where) from the [Project Waterpark talk](https://www.youtube.com/watch?v=hdBm4K-vvt0) by [Bryan Hunter](https://bsky.app/profile/bryan-hunter.bsky.social) from HCA Healthcare
