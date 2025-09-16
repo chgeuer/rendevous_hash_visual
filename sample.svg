@@ -1,0 +1,503 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="476"
+     height="546"
+     viewBox="0 0 476 546">
+  <style>
+  .region { fill: #f5f5f5; stroke: #000000; stroke-width: 2; }
+  .zone { fill: #ffffff; stroke: #999999; stroke-width: 1; }
+  .node { stroke-width: 1; }
+  .node-text { fill: white; font-size: 10px; font-family: Arial, sans-serif; text-anchor: middle; }
+  .region-title { font-size: 14px; font-weight: bold; font-family: Arial, sans-serif; }
+  .zone-title { font-size: 11px; font-family: Arial, sans-serif; fill: #666666; }
+  .arrow-thick { stroke: #ff4444; stroke-width: 3; opacity: 1.0; fill: none; }
+  .arrow-medium { stroke: #ff4444; stroke-width: 2; opacity: 0.8; fill: none; }
+  .arrow-thin { stroke: #ff4444; stroke-width: 1; opacity: 0.5; stroke-dasharray: 4,2; fill: none; }
+  .arrowhead-thick { fill: #ff4444; opacity: 1.0; }
+  .arrowhead-medium { fill: #ff4444; opacity: 0.8; }
+  .arrowhead-thin { fill: #ff4444; opacity: 0.5; }
+</style>
+
+<g>
+  <rect x="40"      y="40" width="188" height="223" class="region" rx="10" ry="10"/>
+  <text x="50" y="58" class="region-title">Florida</text>
+  <g>
+  <rect x="50" y="75" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="55" y="88" class="zone-title">Zone A</text>
+  <g>
+  <rect x="58.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="116.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="98.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="116.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="138.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="116.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="178.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="116.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="58.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="144.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="98.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="144.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="138.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="144.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="178.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="144.0" class="node-text">8</text>
+</g>
+
+</g>
+
+<g>
+  <rect x="50" y="169" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="55" y="182" class="zone-title">Zone B</text>
+  <g>
+  <rect x="58.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="210.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="98.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="210.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="138.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="210.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="178.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="210.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="58.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="238.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="98.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="238.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="138.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="238.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="178.0" y="225.0" width="32" height="20"
+        class="node" fill="#4444ff" stroke="#0000cc" rx="4" ry="4"/>
+  <text x="194.0" y="238.0" class="node-text">8</text>
+</g>
+
+</g>
+
+</g>
+
+<g>
+  <rect x="248"      y="40" width="188" height="223" class="region" rx="10" ry="10"/>
+  <text x="258" y="58" class="region-title">Tennessee</text>
+  <g>
+  <rect x="258" y="75" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="263" y="88" class="zone-title">Zone A</text>
+  <g>
+  <rect x="266.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="116.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="306.0" y="103.0" width="32" height="20"
+        class="node" fill="#4444ff" stroke="#0000cc" rx="4" ry="4"/>
+  <text x="322.0" y="116.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="346.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="116.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="386.0" y="103.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="116.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="266.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="144.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="306.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="144.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="346.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="144.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="386.0" y="131.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="144.0" class="node-text">8</text>
+</g>
+
+</g>
+
+<g>
+  <rect x="258" y="169" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="263" y="182" class="zone-title">Zone B</text>
+  <g>
+  <rect x="266.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="210.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="306.0" y="197.0" width="32" height="20"
+        class="node" fill="#ff4444" stroke="#cc0000" rx="4" ry="4"/>
+  <text x="322.0" y="210.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="346.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="210.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="386.0" y="197.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="210.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="266.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="238.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="306.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="238.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="346.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="238.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="386.0" y="225.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="238.0" class="node-text">8</text>
+</g>
+
+</g>
+
+</g>
+
+<g>
+  <rect x="40"      y="283" width="188" height="223" class="region" rx="10" ry="10"/>
+  <text x="50" y="301" class="region-title">Texas</text>
+  <g>
+  <rect x="50" y="318" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="55" y="331" class="zone-title">Zone A</text>
+  <g>
+  <rect x="58.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="359.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="98.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="359.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="138.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="359.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="178.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="359.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="58.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="387.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="98.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="387.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="138.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="387.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="178.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="387.0" class="node-text">8</text>
+</g>
+
+</g>
+
+<g>
+  <rect x="50" y="412" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="55" y="425" class="zone-title">Zone B</text>
+  <g>
+  <rect x="58.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="453.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="98.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="453.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="138.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="154.0" y="453.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="178.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="453.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="58.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="74.0" y="481.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="98.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="114.0" y="481.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="138.0" y="468.0" width="32" height="20"
+        class="node" fill="#4444ff" stroke="#0000cc" rx="4" ry="4"/>
+  <text x="154.0" y="481.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="178.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="194.0" y="481.0" class="node-text">8</text>
+</g>
+
+</g>
+
+</g>
+
+<g>
+  <rect x="248"      y="283" width="188" height="223" class="region" rx="10" ry="10"/>
+  <text x="258" y="301" class="region-title">Utah</text>
+  <g>
+  <rect x="258" y="318" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="263" y="331" class="zone-title">Zone A</text>
+  <g>
+  <rect x="266.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="359.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="306.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="359.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="346.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="359.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="386.0" y="346.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="359.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="266.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="387.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="306.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="387.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="346.0" y="374.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="387.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="386.0" y="374.0" width="32" height="20"
+        class="node" fill="#bbbbff" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="387.0" class="node-text">8</text>
+</g>
+
+</g>
+
+<g>
+  <rect x="258" y="412" width="168" height="84"
+        class="zone" rx="5" ry="5"/>
+  <text x="263" y="425" class="zone-title">Zone B</text>
+  <g>
+  <rect x="266.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="453.0" class="node-text">1</text>
+</g>
+
+<g>
+  <rect x="306.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="453.0" class="node-text">2</text>
+</g>
+
+<g>
+  <rect x="346.0" y="440.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="453.0" class="node-text">3</text>
+</g>
+
+<g>
+  <rect x="386.0" y="440.0" width="32" height="20"
+        class="node" fill="#4444ff" stroke="#0000cc" rx="4" ry="4"/>
+  <text x="402.0" y="453.0" class="node-text">4</text>
+</g>
+
+<g>
+  <rect x="266.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="282.0" y="481.0" class="node-text">5</text>
+</g>
+
+<g>
+  <rect x="306.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="322.0" y="481.0" class="node-text">6</text>
+</g>
+
+<g>
+  <rect x="346.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="362.0" y="481.0" class="node-text">7</text>
+</g>
+
+<g>
+  <rect x="386.0" y="468.0" width="32" height="20"
+        class="node" fill="#999999" stroke="#666666" rx="4" ry="4"/>
+  <text x="402.0" y="481.0" class="node-text">8</text>
+</g>
+
+</g>
+
+</g>
+
+
+  <g>
+  <line x1="322.0" y1="197.0" x2="322.0" y2="123.0" class="arrow-thick"/>
+  <polygon points="322.0,123.0 325.0,131.0 319.0,131.0" class="arrowhead-thick"/>
+
+</g>
+
+<g>
+  <line x1="325.2921810699589" y1="217.0" x2="398.7078189300411" y2="440.0" class="arrow-thick"/>
+  <polygon points="398.7078189300411,440.0 393.3566095960679,433.33932746158484 399.05570616943015,431.46308167611573" class="arrowhead-thick"/>
+
+</g>
+
+<g>
+  <line x1="306.0" y1="210.5" x2="210.0" y2="231.5" class="arrow-thick"/>
+  <polygon points="210.0,231.5 217.1741095027538,226.85972491736774 218.45629077558638,232.72112502174534" class="arrowhead-thick"/>
+
+</g>
+
+<g>
+  <line x1="315.80073800738006" y1="217.0" x2="160.19926199261994" y2="468.0" class="arrow-thick"/>
+  <polygon points="160.19926199261994,468.0 161.8646245211254,459.61987066635305 166.96420921293299,462.78123682216" class="arrowhead-thick"/>
+
+</g>
+
+<g>
+  <line x1="326.51977401129943" y1="217.0" x2="397.48022598870057" y2="374.0" class="arrow-medium"/>
+  <polygon points="397.48022598870057,374.0 391.45158741737544,367.94562001718333 396.9190632181844,365.47444451399286" class="arrowhead-medium"/>
+
+</g>
+
+</svg>
