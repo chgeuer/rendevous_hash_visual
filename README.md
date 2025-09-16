@@ -79,7 +79,7 @@ The right panel shows an SVG visualization depicting:
 - **`SvgAnimator`**: Animation engine for multi-frame SVG sequences
 - **`RendevousHashTopology`**: Core hashing and topology logic (external dependency)
 
-The `InteractiveState` has these properties:
+The `InteractiveSvgLive` LiveView is comparably simple, because all changes happen just by sending state into `InteractiveState`, which has these properties:
 
 ```mermaid
 flowchart TD
